@@ -58,17 +58,6 @@ struct OFD {
     page_count: i32,
 }
 
-fn main() {
-    match OFD::from_local_file("abc.ofd") {
-        Ok(result) => {
-            println!("create ofd using local file successfully. ofd={:?}", result)
-        }
-        Err(why) => {
-            println!("create ofd using local file err. {}", why.to_string());
-        }
-    }
-}
-
 /// OFD 的方法
 impl OFD {
     /// 用默认值初始化一个 OFD 实例
@@ -154,4 +143,15 @@ fn unzip_to_dest_dir(zip_file_path: &str, dest_dir: &str) -> Option<Err> {
         }
     }
     None
+}
+
+fn main() {
+    match OFD::from_local_file("abc.ofd") {
+        Ok(result) => {
+            println!("create ofd using local file successfully. ofd={:?}", result)
+        }
+        Err(why) => {
+            println!("create ofd using local file err. {}", why.to_string());
+        }
+    }
 }
