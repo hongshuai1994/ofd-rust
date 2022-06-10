@@ -1,0 +1,1 @@
+pub const OFD_FILENAME_EXTENSION: &str = "ofd";
