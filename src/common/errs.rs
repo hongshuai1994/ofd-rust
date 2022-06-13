@@ -9,6 +9,8 @@ pub const FILE_RENAME_ERR: &str = "failed to rename file.";
 pub const FILE_COPY_ERR: &str = "failed to copy file.";
 pub const CREATE_DIR_ERR: &str = "failed to create directory.";
 pub const CREATE_FILE_ERR: &str = "failed to create file";
+pub const MUST_NOT_EMPTY: &str = "this value must not be empty";
+pub const READ_XML_ERR: &str = "read xml err";
 
 /// 处理 OFD 中遇到的错误
 #[derive(Debug)]
